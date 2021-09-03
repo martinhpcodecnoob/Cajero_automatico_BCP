@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="container">
+        <h1 id="welcome">Bienvenido</h1>
+        <hr>
+        <h2>Elige las operaciones a realizar</h2>
+        <hr>
+    </header>
+    <main class="container">
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand">>>BCP>></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <button type="button" class="nav-link btn btn-outline-info" id="clickSaldo">Consultar
+                                    Saldo</button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="nav-link btn btn-outline-warning" id="monto">Ingresar
+                                    Monto</button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button type="button" class="nav-link btn btn-outline-danger" id="menosmonto">Retirar
+                                    Monto</button>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" placeholder="Pon Cantidad ≧◡≦" id="money">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section>
+            <div class="fw-bolder fs-1 text-center text-primary" id="cuenta">
+                Tu cuenta es:
+            </div>
+        </section>
+
+        <section>
+            <div class="row d-flex justify-content-center">
+                <table class="table">
+                    <thead class="table-dark">
+                        <th scope="col">Operacion de cada una</th>
+                    </thead>
+                    <tbody id="tabBod">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+    <script src="./main.js"></script>
+    <script src="./principal.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
